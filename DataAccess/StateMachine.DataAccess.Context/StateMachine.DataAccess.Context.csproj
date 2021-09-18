@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Trading.StateMachine.DataAccess.Context</AssemblyName>
+    <RootNamespace>Trading.StateMachine.DataAccess.Context</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SqlScripts\AddExtendedTariffFieldsForArrested.sql" />
+    <None Remove="SqlScripts\AddExtendedTariffFieldsForConfiscate.sql" />
+    <None Remove="SqlScripts\AddFieldTypes.sql" />
+    <None Remove="SqlScripts\AddValidationRules.sql" />
+    <None Remove="SqlScripts\fields_for_procedure_arrested-property.sql" />
+    <None Remove="SqlScripts\procedure_arrested-property.sql" />
+    <None Remove="SqlScripts\UpdateDoAvailableExtendedTariff.sql" />
+    <None Remove="SqlScripts\Процедура_ConfiscatedProperty.sql" />
+    <None Remove="SqlScripts\Функции для добавления процедуры.sql" />
+    <None Remove="SqlScripts\Функции для добавления процедуры.sql" />
+    <None Remove="SqlScripts\activate-paper-deal-for-arrested-property.sql" />
+    <None Remove="Migrations\**" />
+    <None Remove="SqlScripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SqlScripts\AddExtendedTariffFieldsForArrested.sql" />
+    <EmbeddedResource Include="SqlScripts\AddExtendedTariffFieldsForConfiscate.sql" />
+    <EmbeddedResource Include="SqlScripts\AddFieldTypes.sql" />
+    <EmbeddedResource Include="SqlScripts\AddValidationRules.sql" />
+    <EmbeddedResource Include="SqlScripts\fields_for_procedure_arrested-property.sql" />
+    <EmbeddedResource Include="SqlScripts\procedure_arrested-property.sql" />
+    <EmbeddedResource Include="SqlScripts\UpdateDoAvailableExtendedTariff.sql" />
+    <EmbeddedResource Include="SqlScripts\Процедура_ConfiscatedProperty.sql" />
+    <EmbeddedResource Include="SqlScripts\Функции для добавления процедуры.sql" />
+    <EmbeddedResource Include="SqlScripts\InsertIntoTradesInfoAboutTrades.sql" />
+    <EmbeddedResource Include="SqlScripts\activate-paper-deal-for-arrested-property.sql" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="SqlScripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.EntityFrameworkCore" Version="6.3.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Trading.StateMachine.Common\Trading.StateMachine.Common.csproj" />
+    <ProjectReference Include="..\StateMachine.DataAccess.Models\StateMachine.DataAccess.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="SqlScripts\**" />
+  </ItemGroup>
+
+</Project>

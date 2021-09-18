@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Trading.StateMachine.BusinessLogic.Managers.Abstraction</AssemblyName>
+    <RootNamespace>Trading.StateMachine.BusinessLogic.Managers.Abstraction</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\StateMachine.DataAccess.Models\StateMachine.DataAccess.Models.csproj" />
+    <ProjectReference Include="..\StateMachine.BusinessLogic.Objects\StateMachine.BusinessLogic.Objects.csproj" />
+  </ItemGroup>
+
+</Project>

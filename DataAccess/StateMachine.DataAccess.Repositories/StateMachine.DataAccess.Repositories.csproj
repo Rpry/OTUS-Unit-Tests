@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Trading.StateMachine.DataAccess.Repositories</AssemblyName>
+    <RootNamespace>Trading.StateMachine.DataAccess.Repositories</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LinqKit" Version="1.1.17" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.50" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StateMachine.DataAccess.Context\StateMachine.DataAccess.Context.csproj" />
+    <ProjectReference Include="..\StateMachine.DataAccess.Models\StateMachine.DataAccess.Models.csproj" />
+    <ProjectReference Include="..\StateMachine.DataAccess.Repositories.Abstraction\StateMachine.DataAccess.Repositories.Abstraction.csproj" />
+  </ItemGroup>
+
+</Project>

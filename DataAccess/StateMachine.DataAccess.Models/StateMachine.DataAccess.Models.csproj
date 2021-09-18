@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Trading.StateMachine.DataAccess.Models</AssemblyName>
+    <RootNamespace>Trading.StateMachine.DataAccess.Models</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="MassTransit" Version="6.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Trading.StateMachine.Common\Trading.StateMachine.Common.csproj" />
+  </ItemGroup>
+
+</Project>

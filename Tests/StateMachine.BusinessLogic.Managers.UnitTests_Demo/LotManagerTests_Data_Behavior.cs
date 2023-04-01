@@ -42,7 +42,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             await lotManager.ValidateAsync(lot);
 
             //Assert
-            _procedureTypeRepositoryMock.Verify(m=> m.GetProcedureNameBy(It.IsAny<string>()), Times.Exactly(2));
+            _procedureTypeRepositoryMock.Verify(m=> m.GetProcedureNameBy(It.IsAny<string>()), Times.Exactly(1));
         }
     }
 }

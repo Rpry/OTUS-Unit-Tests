@@ -66,7 +66,6 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             //Arrange
             var lot = new LotBuilder() //инициализация строителем
                 .WithCreatedUserId(Guid.NewGuid().ToString())
-                .WithCreatedOrganizationId(Guid.NewGuid())
                 .Build();
 
             //Act

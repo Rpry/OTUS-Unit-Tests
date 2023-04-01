@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -21,7 +20,7 @@ namespace WebApiTests
         }
 
         [Fact]
-        public void Validate_Returns_Success_For_Valid_Data()
+        public void Get_Returns_Success_For_Valid_Data()
         {
             //Arrange
             Guid id = Guid.NewGuid();
@@ -36,7 +35,7 @@ namespace WebApiTests
         }
         
         [Fact]
-        public void Validate_Returns_Error_If_Id_Is_Empty()
+        public void Get_Returns_Error_If_Id_Is_Empty()
         {
             //Arrange
             Guid id = Guid.Empty;

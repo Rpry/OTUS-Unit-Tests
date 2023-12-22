@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Trading.StateMachine.BusinessLogic.Managers;
 using Trading.StateMachine.BusinessLogic.Managers.Resources;
 using Trading.StateMachine.DataAccess.Models;

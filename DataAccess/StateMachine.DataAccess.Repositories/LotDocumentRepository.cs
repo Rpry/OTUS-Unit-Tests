@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Trading.StateMachine.DataAccess.Context;
 using Trading.StateMachine.DataAccess.Models;
 using Trading.StateMachine.DataAccess.Repositories.Abstraction;
-using Z.EntityFramework.Plus;
 
 namespace Trading.StateMachine.DataAccess.Repositories
 {

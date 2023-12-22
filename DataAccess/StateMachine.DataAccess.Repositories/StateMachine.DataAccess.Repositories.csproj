@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <AssemblyName>Trading.StateMachine.DataAccess.Repositories</AssemblyName>
     <RootNamespace>Trading.StateMachine.DataAccess.Repositories</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="LinqKit" Version="1.1.17" />
-    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.50" />
   </ItemGroup>
 
   <ItemGroup>

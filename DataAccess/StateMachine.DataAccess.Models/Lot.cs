@@ -9,6 +9,11 @@ namespace Trading.StateMachine.DataAccess.Models
     /// </summary>
     public class Lot : IEntity<Guid>
     {
+        public Lot()
+        {
+            ProcedureCode = "ArrestedProperty";
+        }
+        
         /// <summary>
         /// Идентификатор сущности
         /// </summary>

@@ -72,7 +72,6 @@ namespace Trading.StateMachine.DataAccess.Context
                 .WithMany(x => x.Resources)
                 .OnDelete(DeleteBehavior.Cascade);
 
-        
             modelBuilder.Entity<Lot>()
                 .HasOne(a => a.ProcedureType)
                 .WithMany(x => x.Lots)

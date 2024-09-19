@@ -51,7 +51,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
         public async Task Validate_Returns_Success_For_Valid_Data()
         {
             //Arrange
-            var lot = GetLot(); //инициализация фабричным методом
+            var lot = GetLot(); //инициализация в отдельном методе
 
             //Act
             var result = await lotManager.ValidateAsync(lot);

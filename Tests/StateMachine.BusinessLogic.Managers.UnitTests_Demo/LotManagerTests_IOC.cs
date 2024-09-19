@@ -27,7 +27,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             var serviceProvider = serviceCollection
                 .BuildServiceProvider();
             
-            _procedureTypeRepositoryMock.Setup(m => 
+            _procedureTypeRepositoryMock.Setup(m =>
                 m.GetProcedureNameBy(It.IsAny<string>())).ReturnsAsync("someName");
             
             lotManager = new LotManager(serviceProvider.GetService<IMapper>(), 

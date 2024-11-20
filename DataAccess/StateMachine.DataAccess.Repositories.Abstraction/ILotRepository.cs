@@ -13,6 +13,6 @@ namespace Trading.StateMachine.DataAccess.Repositories.Abstraction
         /// Проверить наличине
         /// </summary>
         /// <param name="id">Идентификатор</param>
-        Task<bool> Any(Guid id);
+        Task<bool> AnyAsync(Guid id);
     }
 }

@@ -27,7 +27,7 @@ namespace Trading.StateMachine.BusinessLogic.Managers
             {
                 throw new ArgumentException(Resources.Exceptions.LotDocumentService_CreateAsync_Имя_лота_не_передано);
             }
-            if (!await _lotRepository.Any(lotId))
+            if (!await _lotRepository.AnyAsync(lotId))
             {
                 throw new LotNotFoundException(lotId);
             }
@@ -42,7 +42,7 @@ namespace Trading.StateMachine.BusinessLogic.Managers
                 FileId = fileId,
                 Created = DateTime.UtcNow
             };
-            var createdDocument = _lotDocumentRepository.Add(lotDocument);
+            var createdDocument = await _lotDocumentRepository.AddAsync(lotDocument);
             await _lotDocumentRepository.SaveChangesAsync();
             return createdDocument.Id;
         }

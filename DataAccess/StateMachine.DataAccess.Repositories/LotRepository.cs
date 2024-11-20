@@ -20,7 +20,7 @@ namespace Trading.StateMachine.DataAccess.Repositories
         /// Проверить наличине
         /// </summary>
         /// <param name="id">Идентификатор</param>
-        public async Task<bool> Any(Guid id)
+        public async Task<bool> AnyAsync(Guid id)
         {
             return await EntitySet.Where(t => t.Id.Equals(id)).AnyAsync();
         }

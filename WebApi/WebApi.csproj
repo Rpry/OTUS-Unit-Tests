@@ -10,6 +10,10 @@
         <PackageReference Include="xunit" Version="2.4.1" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+    </PropertyGroup>
+
     <ItemGroup>
       <EmbeddedResource Update="Resources.resx">
         <Generator>PublicResXFileCodeGenerator</Generator>

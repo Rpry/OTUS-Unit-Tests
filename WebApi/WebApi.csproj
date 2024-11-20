@@ -12,6 +12,7 @@
 
     <PropertyGroup>
         <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     </PropertyGroup>
 
     <ItemGroup>

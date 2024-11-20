@@ -7,7 +7,7 @@ using Trading.StateMachine.DataAccess.Repositories.Abstraction;
 
 namespace Trading.StateMachine.BusinessLogic.Managers
 {
-    public class LotDocumentService: ILotDocumentService
+    public class LotDocumentService : ILotDocumentService
     {
         private readonly ILotRepository _lotRepository;
         private readonly ILotDocumentRepository _lotDocumentRepository;

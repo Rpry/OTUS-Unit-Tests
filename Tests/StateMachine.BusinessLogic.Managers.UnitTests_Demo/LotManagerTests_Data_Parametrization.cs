@@ -16,7 +16,6 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
     public class LotManagerTests_Data_Parametrization: IClassFixture<TestFixture>
     {
         private ILotManager lotManager;
-        private ILogger logger;
         private Mock<IProcedureTypeRepository> _procedureTypeRepositoryMock
             = new Mock<IProcedureTypeRepository>();
         

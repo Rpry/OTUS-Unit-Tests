@@ -14,13 +14,8 @@ namespace Trading.StateMachine.DataAccess.Repositories
     /// <typeparam name="TPrimaryKey">Основной ключ</typeparam>
     public abstract class RepositoryBase<T, TPrimaryKey> : ReadRepository<T, TPrimaryKey>, IRepositoryBase<T, TPrimaryKey> where T : class, IEntity<TPrimaryKey>
     {
-        protected readonly DbContext Context;
-        protected DbSet<T> EntitySet;
-
         protected RepositoryBase(DbContext context): base(context)
         {
-            Context = context;
-            EntitySet = Context.Set<T>();
         }
 
         /// <summary>

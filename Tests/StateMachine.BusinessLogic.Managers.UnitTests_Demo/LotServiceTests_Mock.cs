@@ -38,7 +38,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             var result = await lotService.ValidateAsync(lot);
 
             //Assert
-            Assert.True(result.IsSuccessfull);
+            Assert.True(result.IsSuccessful);
         }
     }
 }

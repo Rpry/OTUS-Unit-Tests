@@ -45,7 +45,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             var result = await lotManager.ValidateAsync(lot);
 
             //Assert
-            Assert.False(result.IsSuccessfull);
+            Assert.False(result.IsSuccessful);
             Assert.Single(result.Errors);
             Assert.Equal(Exceptions.Validate_Не_заполнен_идентификатор_пользователя, result.Errors[0]);
         }

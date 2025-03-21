@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <AssemblyName>Trading.StateMachine.BusinessLogic.Managers.Abstraction</AssemblyName>
     <RootNamespace>Trading.StateMachine.BusinessLogic.Managers.Abstraction</RootNamespace>
   </PropertyGroup>

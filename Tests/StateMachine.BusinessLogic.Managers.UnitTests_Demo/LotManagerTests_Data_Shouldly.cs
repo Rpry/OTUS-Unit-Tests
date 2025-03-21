@@ -43,7 +43,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             var result = await lotManager.ValidateAsync(lot);
 
             //Assert
-            result.IsSuccessfull.ShouldBeFalse();
+            result.IsSuccessful.ShouldBeFalse();
             result.Errors.Count.ShouldBe(1);
             result.Errors[0].ShouldBe(Exceptions.Validate_Не_заполнен_идентификатор_организации);
         }
@@ -60,7 +60,7 @@ namespace StateMachine.BusinessLogic.Managers.UnitTests_Demo
             var result = await lotManager.ValidateAsync(lot);
 
             //Assert
-            result.IsSuccessfull.Should().BeFalse();
+            result.IsSuccessful.Should().BeFalse();
             result.Errors.Should()
                 .HaveCount(1)
                 .And

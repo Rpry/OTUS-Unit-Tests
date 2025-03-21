@@ -6,7 +6,7 @@ namespace Trading.StateMachine.Common
     {
         public List<string> Errors { get; set; } = new List<string>();
 
-        public bool IsSuccessfull
+        public bool IsSuccessful
         {
             get
             {
